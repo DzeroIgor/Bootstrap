@@ -1,0 +1,9 @@
+.info {
+  height: 28vh;
+}
+
+@media (min-width: 992px) {
+  .info {
+    height: auto;
+  }
+}/*# sourceMappingURL=style.css.map */
