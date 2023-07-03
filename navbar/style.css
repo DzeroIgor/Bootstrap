@@ -1,0 +1,12 @@
+.navbar .navbar-brand .small-logo {
+  height: 50px;
+}
+.navbar .nav-item a:hover {
+  color: #ef5656;
+}
+.navbar .product-small {
+  height: 50px;
+}
+.navbar .dropdown-width {
+  width: 300px;
+}/*# sourceMappingURL=style.css.map */

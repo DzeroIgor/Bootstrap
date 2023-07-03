@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap navbar</title>
+
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+        integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- bootstrap icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>    
+    <nav class="navbar navbar-expand-lg justify-content-between bg-light">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img class="small-logo" src="images/logo.png" alt="">
+            </a>
+
+            <button class="navbar-toggler btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main-menu">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <div class=" navbar-collapse collapse justify-content-between" id="navbar-main-menu">       
+                <a href="tel: +123 456 789" class="btn btn-outline-dark ms-lg-5"><i class="bi bi-telephone-fill"></i> +123 456 789</a>
+
+                <!-- main links -->
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item ps-1 ps-lg-4 pe-lg-4 fw-bold"><a class="nav-link" href="#">Index</a></li>
+                    <li class="nav-item ps-1 ps-lg-4 pe-lg-4 fw-bold"><a class="nav-link" href="#">Newest</a></li>
+                    <li class="nav-item ps-1 ps-lg-4 pe-lg-4 fw-bold"><a class="nav-link" href="#">Sichuan</a></li>
+                    <li class="nav-item ps-1 ps-lg-4 pe-lg-4 fw-bold"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#subscribe">Subscribe</a></li>
+                    <li class="nav-item ps-1 ps-lg-4 pe-lg-4 fw-bold"><a class="nav-link" href="#">About</a></li>
+                </ul>
+                
+                <!-- user link -->
+                <ul class="navbar-nav">
+                    <li class="nav-item ps-1"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#search" href=""><i class="bi bi-search"></i></a></li>
+                    <li class="nav-item ps-1"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#login" href=""><i class="bi bi-person-lines-fill"></i></a></li>
+                    <li class="nav-item ps-1 dropdown">
+                        <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false"><i class="bi bi-basket2-fill"></i></a>
+                        
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-width mt-lg-3" aria-labelledby="dropdownMenuButton">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="product d-flex justify-content-between align-items-center">
+                                            <img src="images/1.jpg" class="product-small img-thumbnail" alt="">
+                                            <p class="m-0 ms-2">Scallion Pancakes</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="product d-flex justify-content-between align-items-center">
+                                            <img src="images/2.jpg" class="product-small img-thumbnail" alt="">
+                                            <p class="m-0 ms-2">Dim Sum Chicken Feet</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="product d-flex justify-content-between align-items-center">
+                                            <img src="images/3.jpg" class="product-small img-thumbnail" alt="">
+                                            <p class="m-0 ms-2">Biang Biang Mian</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        
+                    
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal" tabindex="-1" id="search">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Search on site</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    <input class="form-control" placeholder="Type to search..." autofocus>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-info">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="subscribe">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Subscribe to our newsletter.</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input class="form-control" placeholder="Input your email" autofocus>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="login">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>                        
+                        <div class="row mb-3">
+                            <div class="col-sm-10 offset-sm-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                        Terms and Conditions
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"
+    integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
