@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+        integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md justify-content-between">
+
+        <div class="container container-fluid">
+
+            <!-- brand links -->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="">
+            </a>
+
+            <!-- main links -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-menu-button-wide"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarMenu">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item m-lg-4">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item m-lg-4">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item m-lg-4">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item m-lg-4">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item m-lg-4">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item m-lg-4">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>                    
+                </ul>
+
+                <!-- user links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin"><i class="bi bi-person-circle"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="staticBackdrop"><i class="bi bi-cart3"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="offcanvasCart"
+            aria-labelledby="offcanvasCarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="staticBackdropLabel"><i class="bi bi-cart3"></i> Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body flex-grow-0">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col"> </th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col" class="text-end">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="align-middle">
+                            <th scope="row"><img src="images/asus-tuf-dash-f15-fx517zc-hn051-063.webp" class="img-thumbnail"></th>
+                            <td>Asus TUF Dash...</td>
+                            <td class="text-center">1</td>
+                            <td class="text-end">21 990 lei</td>
+                        </tr>
+                        <tr class="align-middle">
+                            <th scope="row"><img src="images/apple-iphone-11-5289.webp" class="img-thumbnail"></th>
+                            <td>Apple iPhone 11</td>
+                            <td class="text-center">1</td>
+                            <td class="text-end">11 799 lei</td>
+                        </tr>
+                        <tr class="align-middle">
+                            <th scope="row"><img src="images/kindle-paperwhite-kids-11th-generation-261450.webp" class="img-thumbnail"></th>
+                            <td>Kindle Paperwhi...</td>
+                            <td class="text-center">1</td>
+                            <td class="text-end">4 999 lei</td>
+                        </tr>
+                        <tr class="align-middle">
+                            <th scope="row"><img src="images/apple-airpods-max-sky-blue-685348.webp" class="img-thumbnail"></th>
+                            <td>Apple AirPods M...</td>
+                            <td class="text-center">1</td>
+                            <td class="text-end">14 499 lei</td>
+                        </tr>
+                        <tr class="align-middle">
+                            <th scope="row"></th>
+                            <td colspan="2" class="fw-bold">Total</td>
+                            <td class="text-end">53 787 lei</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="m-3 d-flex justify-content-between">
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalCartEdit">Manage <i class="bi bi-pencil-square"></i></button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCheckout">Checkout <i class="bi bi-arrow-right-square"></i></button>
+            </div>
+
+        </div>
+    </div>    
+    
+    <!-- Modal Cart -->
+    <div class="modal fade modal-lg" id="modalCartEdit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cart</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col"> </th>
+                                <th scope="col">Name</th>
+                                <th scope="col" class="text-center">Quantity</th>
+                                <th scope="col" class="text-end">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="align-middle">
+                                <th scope="row"><img src="images/asus-tuf-dash-f15-fx517zc-hn051-063.webp" class="img-thumbnail"></th>
+                                <td>Asus TUF Dash F15 FX517ZC-HN051</td>
+                                <td class="text-center">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-light"><i class="bi bi-dash"></i></button>
+                                        <button type="button" class="btn btn-light">1</button>
+                                        <button type="button" class="btn btn-light"><i class="bi bi-plus"></i></button>
+                                    </div>
+                                </td>
+                                <td class="text-end">21 990 lei</td>
+                                <td class="text-end"><button type="button" class="btn-close" aria-label="Close"></button></td>
+                            </tr>
+                            <tr class="align-middle">
+                                <th scope="row"><img src="images/apple-iphone-11-5289.webp" class="img-thumbnail"></th>
+                                <td>Apple iPhone 11</td>
+                                <td class="text-center">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-light"><i class="bi bi-dash"></i></button>
+                                        <button type="button" class="btn btn-light">1</button>
+                                        <button type="button" class="btn btn-light"><i class="bi bi-plus"></i></button>
+                                    </div>
+                                </td>
+                                <td class="text-end">11 799 lei</td>
+                                <td class="text-end"><button type="button" class="btn-close" aria-label="Close"></button></td>
+                            </tr>
+                            <tr class="align-middle">
+                                <th scope="row"><img src="images/kindle-paperwhite-kids-11th-generation-261450.webp" class="img-thumbnail">
+                                </th>
+                                <td>Kindle Paperwhite Kids (11th Generation)</td>
+                                <td class="text-center">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-light"><i class="bi bi-dash"></i></button>
+                                        <button type="button" class="btn btn-light">1</button>
+                                        <button type="button" class="btn btn-light"><i class="bi bi-plus"></i></button>
+                                    </div>
+                                </td>
+                                <td class="text-end">4 999 lei</td>
+                                <td class="text-end"><button type="button" class="btn-close" aria-label="Close"></button></td>
+                            </tr>
+                            <tr class="align-middle">
+                                <th scope="row"><img src="images/apple-airpods-max-sky-blue-685348.webp" class="img-thumbnail"></th>
+                                <td>Apple AirPods Max Sky Blue</td>
+                                <td class="text-center">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-light"><i class="bi bi-dash"></i></button>
+                                        <button type="button" class="btn btn-light">1</button>
+                                        <button type="button" class="btn btn-light"><i class="bi bi-plus"></i></button>
+                                    </div>
+                                </td>
+                                <td class="text-end">14 499 lei</td>
+                                <td class="text-end"><button type="button" class="btn-close" aria-label="Close"></button></td>
+                            </tr>
+                            <tr class="align-middle">
+                                <th scope="row"></th>
+                                <td colspan="2" class="fw-bold">Total</td>
+                                <td class="text-end">53 787 lei</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#modalCheckout">Save and Checkout <i class="bi bi-arrow-right-square"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Checkout modal -->
+    <div class="modal fade modal-lg" id="modalCheckout" tabindex="-1" aria-labelledby="CheckoutModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Checkout</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-4">
+                            <label for="validationCustom01" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="John" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustom02" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="validationCustom02" placeholder="Doe" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustomEmail" class="form-label">Email</label>
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="validationCustomEmail" placeholder="j.doe@example.com"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Please input your email.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationCardNumber" class="form-label">Card Number</label>
+                            <input type="text" class="form-control" id="validationCardNumber" required>
+                            <div class="invalid-feedback">
+                                Please input a valid card number.
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <label for="validationCardName" class="form-label">Cardholder Name</label>
+                            <input type="text" class="form-control" id="validationCardName" required>
+                            <div class="invalid-feedback">
+                                Please input a valid cardholder name.
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="MM" required>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="validationCustom02" placeholder="YY" required>
+                        </div>
+                        <div class="col-md-4">
+                            
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="validationCustomEmail" placeholder="CVV"
+                                    required>                                
+                            </div>
+                        </div>                        
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Agree to terms and conditions
+                                </label>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                        </div>                        
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary col-12" data-bs-dismiss="modal">PAY NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login modal -->
+    <div class="modal" tabindex="-1" id="modalLogin">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>                            
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    
+</body>
+</html>
