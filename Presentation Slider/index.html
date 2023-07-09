@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation Slider</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+        integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row my-5">
+
+            <div class="col-lg me-5">
+            
+                <div id="tourCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"> <!-- data-bs-ride="carousel" for auto slider -->
+                    
+                    <!-- carousel -->   
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/1.jpg" class="d-block w-100" alt="image">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Maldives</h3>
+                                <p>Visit Maldives - The Sunny Side of Life</p>
+
+                                <div class="id-carousel-caption-detailes">
+                                    <h5 class="fw-bold fs-3">Maldives</h5>
+                                    <p>When we think of the Maldives we imagine a paradise: white sandy beaches, turquoise lagoons, coral reef reserves,
+                                        multicoloured fish, spectacular breathtaking sunsets. It really is a wonderful choice for an unforgettable holiday.
+                                        Wild
+                                        islands or luxury resorts, modern villas or bungalows on the water or spas set up in each resort, all make the
+                                        Maldives
+                                        an ideal destination for relaxation!</p>
+                                </div>                              
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/2.jpg" class="d-block w-100" alt="image">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Maldives</h3>
+                                <p>Visit Maldives - The Sunny Side of Life</p>
+
+                                <div class="id-carousel-caption-detailes offert">
+                                    <h5 class="fw-bold fs-3">Tour includes:</h5>
+                                    <div class="row offer">
+                                        <div class="col fw-bold text-start">Accommodation services:</div>
+                                        <div class="col fw-bold text-start">Transport services:</div>
+                                    </div>
+                                    <div class="row offer">
+                                        <div class="col text-start">
+                                            <i class="bi bi-check"></i> Twin Grand <br>
+                                            <i class="bi bi-check"></i> 2ADT <br>
+                                            <i class="bi bi-check"></i> Food type RO <br>
+                                            <i class="bi bi-check"></i> Nr. nights 7 <br>
+                                            <i class="bi bi-check"></i> Check in 31.07.2023 <br>
+                                            <i class="bi bi-check"></i> Check out 07.08.2023
+                                        </div>
+                                        <div class="col text-start">
+                                            <i class="bi bi-check"></i> Airplane <br>
+                                            <i class="bi bi-check"></i> Departure there 31.07.2023 <br>
+                                            <i class="bi bi-check"></i> Departure back 07.08.2023 <br>
+                                            <i class="bi bi-check"></i> Transfer group
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/3.jpg" class="d-block w-100" alt="image">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Maldives</h3>
+                                <p>Visit Maldives - The Sunny Side of Life</p>
+
+                                <div class="id-carousel-caption-detailes">
+                                    <h5 class="fw-bold fs-3">Price Offers</h5>
+                                    
+                                    <div class="row offer">
+                                        <div class="col fw-bold text-start">Period:</div>
+                                        <div class="col fw-bold text-center">Price:</div>
+                                    </div>
+                                    <div class="row offer">
+                                        <div class="col text-start">
+                                            <i class="bi bi-caret-right-fill"></i> From 10.07.2023 <br>
+                                            <i class="bi bi-caret-right-fill"></i> From 15.07.2023 <br>
+                                            <i class="bi bi-caret-right-fill"></i> From 19.07.2023 <br>
+                                            <i class="bi bi-caret-right-fill"></i> From 24.07.2023 <br>
+                                            <i class="bi bi-caret-right-fill"></i> From 31.07.2023 <br>
+                                        </div>
+                                        <div class="col text-center">
+                                            <i class="bi bi-caret-right"></i> 2 528 € <br>
+                                            <i class="bi bi-caret-right"></i> 2 411 € <br>
+                                            <i class="bi bi-caret-right"></i> 2 400 € <br>
+                                            <i class="bi bi-caret-right"></i> 2 345 € <br>
+                                            <i class="bi bi-caret-right"></i> 2 300 € <br>
+                                        </div>
+                                    </div>
+                                    <div class="d-grid gap-2 col-6 mx-auto mt-3">
+                                        <button class="btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#modalOffers">Select Offer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- carousel -->   
+            
+                    <!-- controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#tourCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#tourCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <!-- controls -->
+
+                    <!-- indicators -->
+                    <div class="carousel-indicators">                       
+
+                        <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="0" class="active indicator-item"
+                            aria-current="true" aria-label="Slide 1">
+                            <i class="bi bi-file-earmark-text"></i>
+                        </button>
+                        <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="1" class="indicator-item"
+                            aria-label="Slide 2">
+                            <i class="bi bi-card-heading"></i>
+                        </button>
+                        <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="2" class="indicator-item"
+                            aria-label="Slide 3">
+                            <i class="bi bi-cash-stack"></i>
+                        </button>
+                    </div>
+                    <!-- indicators -->
+            
+                </div>
+            </div>
+            <div class="col-lg">
+            </div>
+        </div>        
+    </div>
+
+    <!-- modal Offers -->
+    <div class="modal fade" id="modalOffers" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="modalOffersLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalOffersLabel">Price Offers</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Period</th>
+                                    <th scope="col" class="text-center">Price</th>
+                                    <th scope="col" class="text-end">Select</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">From 10.07.2023</td>
+                                    <td class="text-center">2 528 €</td>
+                                    <td class="text-end">
+                                        <input class="form-check-input" type="radio" value="1" id="flexCheckDefault" name="destination">
+                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">From 15.07.2023</td>
+                                    <td class="text-center">2 411 €</td>
+                                    <td class="text-end">
+                                        <input class="form-check-input" type="radio" value="2" id="flexCheckDefault" name="destination">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">From 19.07.2023</td>
+                                    <td class="text-center">2 400 €</td>
+                                    <td class="text-end">
+                                        <input class="form-check-input" type="radio" value="3" id="flexCheckDefault" name="destination">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">From 24.07.2023</td>
+                                    <td class="text-center">2 345 €</td>
+                                    <td class="text-end">
+                                        <input class="form-check-input" type="radio" value="4" id="flexCheckDefault" name="destination">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">From 31.07.2023</td>
+                                    <td class="text-center">2 300 €</td>
+                                    <td class="text-end">
+                                        <input class="form-check-input" type="radio" value="5" id="flexCheckDefault" name="destination">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>                       
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#modalCheckout" >Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal Offers -->
+
+    <!-- Checkout modal -->
+    <div class="modal fade" id="modalCheckout" tabindex="-1" aria-labelledby="CheckoutModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Checkout</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-4">
+                            <label for="validationCustom01" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="John" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustom02" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="validationCustom02" placeholder="Doe" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustomEmail" class="form-label">Email</label>
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="validationCustomEmail"
+                                    placeholder="j.doe@example.com" required>
+                                <div class="invalid-feedback">
+                                    Please input your email.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationCardNumber" class="form-label">Card Number</label>
+                            <input type="text" class="form-control" id="validationCardNumber" required>
+                            <div class="invalid-feedback">
+                                Please input a valid card number.
+                            </div>
+                        </div>
+    
+                        <div class="col-md-12">
+                            <label for="validationCardName" class="form-label">Cardholder Name</label>
+                            <input type="text" class="form-control" id="validationCardName" required>
+                            <div class="invalid-feedback">
+                                Please input a valid cardholder name.
+                            </div>
+                        </div>
+    
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="MM" placeholder="MM" required>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="YY" placeholder="YY" required>
+                        </div>
+                        <div class="col-md-4">
+    
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="CVV" placeholder="CVV"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Agree to terms and conditions
+                                </label>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary col-12" data-bs-dismiss="modal">PAY NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Checkout modal -->
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>

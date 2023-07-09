@@ -1,0 +1,97 @@
+.container .col-lg {
+  padding: 0;
+}
+.container .carousel-inner {
+  overflow: visible;
+}
+.container .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 35vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .carousel-inner .carousel-item .carousel-caption {
+  width: 100%;
+  right: 0;
+  left: 0;
+  text-shadow: 0 0 4px #005583;
+}
+.container .carousel-inner .carousel-item .carousel-caption .id-carousel-caption-detailes {
+  text-shadow: 0 0 4px #ffffff;
+  color: black;
+  position: absolute;
+  width: 100%;
+  right: -100%;
+  bottom: 20%;
+  padding: 0 10%;
+  font-size: 0.9em;
+}
+.container .carousel-inner .carousel-item .carousel-caption .id-carousel-caption-detailes .offer {
+  font-size: 1em;
+}
+.container .carousel-inner .carousel-item .carousel-caption .id-carousel-caption-detailes .offer i {
+  color: #00929A;
+  font-size: 1.2em;
+}
+@media (max-width: 992px) {
+  .container .carousel-caption {
+    display: block !important;
+  }
+  .container .carousel-caption .id-carousel-caption-detailes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 160%;
+    padding: 0 10%;
+  }
+  .container .carousel-indicators {
+    flex-direction: column;
+    left: 85%;
+    top: 0;
+    bottom: 0;
+  }
+  .container .carousel-indicators .indicator-item {
+    text-indent: 0 !important;
+    opacity: 0.3;
+    background-clip: initial;
+    border: 0;
+    height: 1.5em;
+    background-color: transparent;
+    color: #00929A;
+    font-size: 1.2em;
+    margin: 0.5em;
+  }
+  .container .carousel-indicators .indicator-item.active {
+    opacity: 1;
+  }
+}
+.container .carousel-indicators {
+  flex-direction: column;
+  left: 85%;
+  top: 0;
+  bottom: 0;
+}
+.container .carousel-indicators .indicator-item {
+  text-indent: 0 !important;
+  opacity: 0.3;
+  background-clip: initial;
+  border: 0;
+  height: 1.5em;
+  background-color: transparent;
+  color: #00929A;
+  font-size: 1.2em;
+  margin: 0.5em;
+}
+.container .carousel-indicators .indicator-item.active {
+  opacity: 1;
+}
+@media (max-width: 992px) {
+  .container .carousel-indicators {
+    flex-direction: row;
+    left: 0;
+    right: 0;
+    top: 102%;
+  }
+}/*# sourceMappingURL=style.css.map */
