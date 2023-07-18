@@ -1,0 +1,319 @@
+$redColor: #d11010;
+$greyColor: #ccc;
+$darkgreyColor: #555;
+
+.banner {
+    background-image: url(images/product-category.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    a {
+        color: $darkgreyColor;
+        text-decoration: none;
+        padding: auto 3em;
+
+        &:hover {
+            color: $redColor !important;
+        }
+    }
+    span {
+        color: $redColor;
+    }
+}
+#product-detail-carousel {
+    height: 400px;
+
+    .carousel-inner {
+        position: absolute;
+        right: 0;
+        width: 400px;
+        img {
+            height: 400px;
+            width: 400px;
+        }
+               
+
+    }
+    
+    
+    .carousel-control-prev {
+        filter: invert(1);
+        transform: rotate(90deg);
+        position: absolute;
+        top: -2%;
+        left: 45%;  
+        z-index: 5;
+        bottom: auto;   
+    }
+
+    .carousel-control-next {
+        filter: invert(1);
+        transform: rotate(90deg);
+        position: absolute;
+        left: 45%;
+        top: 100%;
+        z-index: 5;      
+    }
+    .carousel-indicators {
+        flex-direction: column;
+        position: relative;
+        border: 0 !important; 
+
+
+        [data-bs-target] {
+            text-indent: initial !important;
+
+        }
+
+        .indicator-img {
+            list-style: none;
+            height: 100px;
+            width: 100px;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+    .indicators {
+        position: relative;
+        left: 0;
+        padding-left: 7%;
+        box-sizing: border-box;
+    }
+}
+.about {
+    position: relative;
+    a {
+        color: $darkgreyColor;
+        text-decoration: none;
+
+        &:hover {
+            color: $redColor !important;
+        }
+    }
+    .price {
+        color: $redColor;
+    }
+    #quantity {
+        height: 2.3rem;
+        border-color: $darkgreyColor !important;
+    }
+    .btn {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        &:hover {
+            background-color: $redColor;
+            border-color: $redColor;
+        }
+    }
+    .icon {
+        position: absolute;
+        bottom: 0;
+        span {
+            &:hover {
+                i {
+                    animation: rotate 2s linear infinite;
+                    color: $redColor;
+                }
+            }
+        }
+    }
+}
+@keyframes rotate { 
+    0% {
+    transform: rotateY(0deg);
+    }
+    100% {
+    transform: rotateY(360deg);
+    }
+    
+}
+.social {
+    a {
+        color: $darkgreyColor;
+        text-decoration: none;
+
+        &:hover {
+            color: $redColor !important;
+        }
+    }
+    .social-media {
+        a {
+            color: $darkgreyColor;
+
+            &:hover {
+                color: $redColor !important;
+            }
+        }
+    }
+}
+
+.wrapper {
+    a{
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .containers {
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+    img {
+        position: relative;
+        top: 0;
+    }
+    }
+    .user-comment {
+        border: 1px solid $greyColor;
+        padding: 1rem;
+        position: relative;
+        border-radius: .25rem;
+
+        &::before {
+            content: "";
+            background-color: #fff;
+            border-bottom: 1px solid $greyColor;
+            border-left: 1px solid $greyColor;
+            display: block;
+            height: 10px;
+            width: 10px;
+            position: absolute;
+            left: -6px;
+            top: 10px;
+            transform: rotate(45deg);
+
+        }
+    }
+}
+.gallery {
+    .sort {
+        border: 0;
+        &:focus {
+            box-shadow: none !important;
+        }       
+    }
+    .list {
+        list-style: none;
+        a {
+                color: $darkgreyColor;
+                text-decoration: none;                
+        
+                &:hover {
+                    color: $redColor !important;
+                }
+            }
+    }
+
+
+    .card {
+            border: 0;
+            position: relative;
+            cursor: pointer;
+    
+            p {
+                &:hover {
+                    color: $redColor;
+                }
+            }
+    
+            .stars {
+                font-size: .8em;
+            }
+    
+            a {
+                text-decoration: none;
+                color: #000;
+    
+                &:hover {
+                    color: $redColor !important;
+                    text-decoration: underline;
+                }
+            }
+    
+            .price {
+                color: $redColor;
+            }
+    
+            .add {
+                display: none;
+                height: 2.8em;
+                position: absolute;
+                left: 20%;
+                right: 20%;
+                top: 55%;
+                border: 0;
+                background-color: #fff;
+                box-shadow: 1px 1px 2px $greyColor;
+    
+                &:hover {
+                    background-color: $redColor;
+                    color: #fff;
+                }
+    
+            }
+    
+            &:hover {
+                .add {
+                    display: block;
+                }
+            }
+    
+            .product-buttons {
+                position: absolute;
+                top: -5%;
+                right: 5%;
+                transition: .5s;
+                opacity: 0;
+    
+                .btn {
+                    margin-bottom: .5em;
+                    background-color: #fff;
+                    box-shadow: 1px 1px 1px $greyColor;
+                    width: 3em;
+                    height: 3em;
+                    border: 0;
+    
+                    &:hover {
+                        background-color: $redColor;
+                        color: #fff !important;
+                    }
+                }
+            }
+    
+            &:hover {
+                .product-buttons {
+                    top: 5%;
+                    opacity: 1;
+    
+                    .btn {
+                        margin-bottom: .5em;
+                    }
+                }
+            }
+        }
+    
+    
+        &:hover .prev-style {
+            filter: contrast(.5);
+        }
+    
+        &:hover .next-style {
+            filter: contrast(.5);
+        }
+    
+        .carousel-control-prev {
+            left: 2rem;
+    
+            .prev-style {
+                &:hover {
+                    filter: invert(1);
+                }
+            }
+        }
+}

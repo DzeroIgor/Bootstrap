@@ -1,0 +1,685 @@
+$redColor: #d11010;
+$greyColor: #ccc;
+$darkgreyColor: #555;
+$dropdownRadius: .15em;
+
+
+.top-info {
+    font-size: .9em;
+
+    .language {
+        .dropdown {
+            a {
+                font-size: .9em;
+            }        
+            .units {
+                border-radius: $dropdownRadius;
+
+                .dropdown-item {
+                    
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+                a {
+                    font-size: .9em;
+
+                    &:hover {
+                      color: #d11010;  
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar {
+    .small-logo {
+        height: 30px;
+    }
+
+    .menu-button {
+        border: 0;
+
+        &:focus {
+            box-shadow: 0 0 0 !important;
+        }
+    }
+
+    .nav-menu {
+        a {
+            font-size: .8em;
+            font-weight: 600;
+
+            &:hover {
+                color: $redColor;
+            }
+        }        
+    }
+    
+    .user-menu {
+         
+        .user-icon, .heart-icon {
+            font-size: 1.1em;
+            line-height: .5em;
+        }
+        a {
+            &:hover {
+                color: $redColor;
+            }
+        }
+        .search {
+            position: relative;
+            .search-bar {
+                position: absolute;
+                right: -10px;
+                z-index: 4;
+        
+                overflow: hidden;
+                margin-top: 5px;
+                width: 50px;
+                height: 0px;
+                border: 1px solid #fff;
+                background-color: #fff;
+                transition: .5s;
+            }
+            input {
+                border: 0;
+            }
+            span {
+                background-color: #fff;
+                border: 0;
+                color: $greyColor;
+            }
+            
+            &:hover {
+                .search-bar {
+                    width: 300px;
+                    height: 40px;
+                    border: 1px solid $greyColor;
+                }
+            }
+
+        }
+        .cart {
+            position: relative;
+            
+            .cart-icon {
+                font-size: 1.2em;
+                line-height: .3em; 
+                font-weight: 800;       
+            }
+
+            .card-number {
+                position: absolute;
+                top: -.5em;
+                left: .5em;
+                scale: .8;
+                text-align: center;
+            }
+            .card-products {
+                transition: .5s;
+                position: absolute;
+                right: -10px;
+                z-index: 5;
+
+                overflow: hidden;
+                margin-top: 5px;
+                width: 50px;
+                height: 0px;
+                border: 1px solid #fff;
+                background-color: #fff;
+                p {
+                    padding: 20px;
+                    color: $darkgreyColor;
+                }
+            }
+            &:hover {
+                .card-products {
+                    width: 300px;
+                    height: 70px;
+                    border: 1px solid $greyColor;
+                }
+            }
+        }
+    }
+
+    .dropdown-toggle {
+        &::after {
+          scale: 1.5;
+          margin-left: .5em;  
+        }
+    }
+
+    .dropdown-menu-main {
+        padding: 1.5em;
+        border-radius: $dropdownRadius;
+        transition: .5s;
+        box-shadow: 0 0 4px $greyColor;
+
+        &.multi-column {
+            width: 30em;
+            padding: 1rem;
+
+
+            .container-fluid {
+                display: flex;
+                padding: .8em 2em .8em 1em;
+            }
+
+            .col-md-4 {
+                flex: 0 0 33.333333%;
+                max-width: 33.333333%;
+                padding-right: 5em;
+            }
+        }
+
+        .dropdown-header {            
+            &:hover {
+                color: $redColor;
+                cursor: pointer;
+            }
+        }
+
+        .dropdown-item {
+            padding: .8em 2em .8em 1em;
+            background-color: transparent;
+            font-weight: 400;
+        }
+    }
+}
+#sale-carousel .carousel-control-prev-icon, 
+#sale-carousel .carousel-control-next-icon {
+    filter: invert(.2) grayscale(20) !important;
+}
+
+// style for hover js dropdown
+.dropdown:hover .dropdown-menu-main {
+    display: block;
+    margin-left: 1.5em;
+}
+
+@media (max-width: 992px) {
+    .container {
+        position: relative;
+    }
+    .collapse-menu {
+        position: absolute;
+        z-index: 5;
+        top: 3.3em;
+        margin-left: .8em;
+        transition: .5s;
+
+        background-color: #fff;
+        width: 15em;
+        border-radius: .25em;
+        box-shadow: 0 1px 4px g$greyColor;
+        padding: .5em 1.5em;        
+
+        .menu-item, .submenu-item {
+            border-bottom: .25px solid $greyColor;
+            padding: .25em 0;
+        }
+    }
+}
+
+.carousel-caption {
+    right: auto !important;
+    left: 0 !important;
+    height: 100%;
+    padding-top: 10% !important;
+    padding-left: 10vw;
+    text-align: start !important;
+
+    p {
+        text-align: start;
+    }
+}
+.carousel-indicators {   
+    margin-bottom: 2rem !important;
+    
+    #slide-indicator {
+        width: 10px;
+        height: 10px;
+        border: 0;
+        border-radius: 100%;
+        background-color: $greyColor;
+    
+        &.active {
+            background-color: $redColor;
+        }
+    }
+}
+.carousel-timer {
+    height: 3px;
+    background-color: #fff;
+    position: relative;
+}
+
+.carousel-timer-bar {
+    height: 100%;
+    background-color: $greyColor;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#slide-button {  
+    padding: .5rem 3rem !important;
+
+    
+    &:hover {
+        background-color: $redColor;
+        border-color: $redColor;
+    }
+}
+
+
+.section-one {
+
+    .bg-image {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        inset: 0;
+        z-index: -2;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: .25s;
+    }
+    a {
+        &:hover {
+            color: $redColor !important;
+        }
+    }
+
+    .top-trending {
+        cursor: pointer;
+        overflow: hidden;
+        background-color: transparent;
+        border: 0;
+        
+        &:hover {
+            .bg-image {
+                scale: 1.05;
+                filter: contrast(.9);
+                }
+            }
+        .bg-image {
+            background-image: url(images/banner1.jpg);           
+        }
+    }
+    .black-fridays {
+        cursor: pointer;
+        overflow: hidden;
+        background-color: transparent;
+        border: 0;
+        
+        &:hover {
+            .bg-image {
+                scale: 1.05;
+                filter: contrast(.9);
+                }
+            }
+        .bg-image {
+            background-image: url(images/banner2.jpg);       
+        }
+        
+    }
+    .new-arrivals {
+        cursor: pointer;
+        overflow: hidden;
+        background-color: transparent;
+        border: 0;
+        
+        &:hover {
+            .bg-image {
+                scale: 1.05;
+                filter: contrast(.9);
+                }
+            }
+        .bg-image {
+            background-image: url(images/banner3.jpg);         
+        }
+    }
+
+    .shipping-menu {
+        img {
+            width: 3rem;
+            margin: auto;
+        }
+
+        @media (max-width: 768px) {
+        .border-sd-end {
+            border: none !important;
+            }
+        }
+    }
+}
+
+#product-carousel, #arrivals-carousel {
+    .card {
+        border: 0;
+        position: relative;
+        cursor: pointer;
+
+        p {
+            &:hover {
+                color: $redColor;
+            }
+        }
+        .stars {
+            font-size: .8em;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+            &:hover {
+                color: $redColor !important;
+                text-decoration: underline;
+            }
+        }
+        .price {
+            color: $redColor;
+        }
+        .add {
+            display: none;
+            height: 2.8em;
+            position: absolute;
+            left: 20%;
+            right: 20%;
+            top: 55%;
+            border: 0;
+            background-color: #fff;
+            box-shadow: 1px 1px 2px $greyColor;
+            &:hover {
+                background-color: $redColor;
+                color: #fff;
+            }
+            
+        }
+        &:hover {
+            .add {
+                display: block;
+            }
+        }
+        .product-buttons {
+            position: absolute;
+            top: -5%;
+            right: 5%;
+            transition: .5s;
+            opacity: 0;
+
+            .btn {
+                margin-bottom: .5em;
+                background-color: #fff;
+                box-shadow: 1px 1px 1px $greyColor;
+                width: 3em;
+                height: 3em;
+                border: 0;
+                &:hover {
+                    background-color: $redColor;
+                    color: #fff !important;
+                }
+            }
+        }
+        &:hover {
+            .product-buttons {
+                top: 5%;
+                opacity: 1;
+        
+                .btn {
+                    margin-bottom: .5em;
+                    }
+                }
+            }
+        }
+
+
+    &:hover .prev-style {
+        filter: contrast(.5);
+    }
+
+    &:hover .next-style {
+        filter: contrast(.5);
+    }
+
+    .carousel-control-prev {
+        left: 2rem;
+
+        .prev-style {
+            &:hover {
+                filter: invert(1);
+            }
+        }
+    }
+
+    .carousel-control-next {
+        right: 2rem;
+
+        .next-style {
+            &:hover {
+                filter: invert(1);
+            }
+        }
+    }
+}
+
+.section-two {
+
+    .bg-image {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        inset: 0;
+        z-index: -2;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: .25s;
+    }
+
+    a {
+        &:hover {
+            color: $redColor !important;
+        }
+    }
+
+    .cutlery {
+        cursor: pointer;
+        overflow: hidden;
+        background-color: transparent;
+        border: 0;
+        height: 100%;
+        position: relative;
+        width: 100%;
+        &::before {
+            content: "";
+                display: block;
+                padding-right: 50%;
+            }
+        .cutlery-body {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        &:hover {
+            .bg-image {
+                scale: 1.05;
+                filter: contrast(.9);
+            }
+        }
+
+        .bg-image {
+            background-image: url(images/banner14.jpg);
+            background-position: right center;
+        }
+    }
+
+    .apron {
+        cursor: pointer;
+        overflow: hidden;
+        background-color: transparent;
+        border: 0;
+
+        &:hover {
+            .bg-image {
+                scale: 1.05;
+                filter: contrast(.9);
+            }
+        }
+
+        .bg-image {
+            background-image: url(images/banner15.jpg);
+        }
+
+    }
+
+    .napkins {
+        cursor: pointer;
+        overflow: hidden;
+        background-color: transparent;
+        border: 0;
+
+        &:hover {
+            .bg-image {
+                scale: 1.05;
+                filter: contrast(.9);
+            }
+        }
+
+        .bg-image {
+            background-image: url(images/banner16.jpg);
+            background-position: bottom center;
+        }
+    }
+    .pitchers {
+        cursor: pointer;
+        overflow: hidden;
+        background-color: transparent;
+        border: 0;
+
+        &:hover {
+            .bg-image {
+                scale: 1.05;
+                filter: contrast(.9);
+            }
+        }
+
+        .bg-image {
+            background-image: url(images/banner17.jpg);
+            background-position: bottom center;
+        }
+    }
+    .accessories {
+        cursor: pointer;
+        overflow: hidden;
+        background-color: transparent;
+        border: 0;
+
+        &:hover {
+            .bg-image {
+                scale: 1.05;
+                filter: contrast(.9);
+            }
+        }
+
+        .bg-image {
+            background-image: url(images/banner19.jpg);
+            background-position: bottom center;
+        }
+    }
+    .dinerware {
+        cursor: pointer;
+        overflow: hidden;
+        background-color: transparent;
+        border: 0;
+        height: 100%;
+        position: relative;
+        width: 100%;
+
+        &::before {
+            content: "";
+            display: block;
+            padding-right: 50%;
+        }
+
+        .dinerware-body {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        &:hover {
+            .bg-image {
+                scale: 1.05;
+                filter: contrast(.9);
+            }
+        }
+
+        .bg-image {
+            background-image: url(images/banner18.jpg);
+        }
+    }
+    @media (max-width: 768px) {
+        .dinerware-head, .cutlery-head {
+            height: 500px;
+        }
+    }
+
+}
+footer {
+    --bs-gutter-x: 0px !important;
+    .small-logo {
+            height: 50px;
+        }
+    .input-subscribe {
+        border: 0;
+        height: 3em;
+        padding-left: 1.5em;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .subscribe {
+        background-color: #fff;
+        border: 0;
+        
+        &:hover {
+            background-color: #fff;
+            color: $redColor;
+        }
+        &:active {
+            background-color: #fff !important;
+        }
+    }
+    .social-media {
+        a {
+            color: $darkgreyColor;
+            &:hover {
+                color: $redColor !important;
+            }
+        }
+    }
+        a {
+            color: $darkgreyColor;
+    
+            &:hover {
+                color: $redColor !important;
+            }
+        }
+}
+.btn-scroll-to-top {
+    opacity: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+}
+
+.btn-scroll-to-top.show {
+    opacity: 1;
+}

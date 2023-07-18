@@ -1,0 +1,545 @@
+.top-info {
+  font-size: 0.9em;
+}
+.top-info .language .dropdown a {
+  font-size: 0.9em;
+}
+.top-info .language .dropdown .units {
+  border-radius: 0.15em;
+}
+.top-info .language .dropdown .units .dropdown-item:hover {
+  background-color: transparent;
+}
+.top-info .language .dropdown .units a {
+  font-size: 0.9em;
+}
+.top-info .language .dropdown .units a:hover {
+  color: #d11010;
+}
+
+.navbar .small-logo {
+  height: 30px;
+}
+.navbar .menu-button {
+  border: 0;
+}
+.navbar .menu-button:focus {
+  box-shadow: 0 0 0 !important;
+}
+.navbar .nav-menu a {
+  font-size: 0.8em;
+  font-weight: 600;
+}
+.navbar .nav-menu a:hover {
+  color: #d11010;
+}
+.navbar .user-menu .user-icon, .navbar .user-menu .heart-icon {
+  font-size: 1.1em;
+  line-height: 0.5em;
+}
+.navbar .user-menu a:hover {
+  color: #d11010;
+}
+.navbar .user-menu .search {
+  position: relative;
+}
+.navbar .user-menu .search .search-bar {
+  position: absolute;
+  right: -10px;
+  z-index: 4;
+  overflow: hidden;
+  margin-top: 5px;
+  width: 50px;
+  height: 0px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  transition: 0.5s;
+}
+.navbar .user-menu .search input {
+  border: 0;
+}
+.navbar .user-menu .search span {
+  background-color: #fff;
+  border: 0;
+  color: #ccc;
+}
+.navbar .user-menu .search:hover .search-bar {
+  width: 300px;
+  height: 40px;
+  border: 1px solid #ccc;
+}
+.navbar .user-menu .cart {
+  position: relative;
+}
+.navbar .user-menu .cart .cart-icon {
+  font-size: 1.2em;
+  line-height: 0.3em;
+  font-weight: 800;
+}
+.navbar .user-menu .cart .card-number {
+  position: absolute;
+  top: -0.5em;
+  left: 0.5em;
+  scale: 0.8;
+  text-align: center;
+}
+.navbar .user-menu .cart .card-products {
+  transition: 0.5s;
+  position: absolute;
+  right: -10px;
+  z-index: 5;
+  overflow: hidden;
+  margin-top: 5px;
+  width: 50px;
+  height: 0px;
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+.navbar .user-menu .cart .card-products p {
+  padding: 20px;
+  color: #555;
+}
+.navbar .user-menu .cart:hover .card-products {
+  width: 300px;
+  height: 70px;
+  border: 1px solid #ccc;
+}
+.navbar .dropdown-toggle::after {
+  scale: 1.5;
+  margin-left: 0.5em;
+}
+.navbar .dropdown-menu-main {
+  padding: 1.5em;
+  border-radius: 0.15em;
+  transition: 0.5s;
+  box-shadow: 0 0 4px #ccc;
+}
+.navbar .dropdown-menu-main.multi-column {
+  width: 30em;
+  padding: 1rem;
+}
+.navbar .dropdown-menu-main.multi-column .container-fluid {
+  display: flex;
+  padding: 0.8em 2em 0.8em 1em;
+}
+.navbar .dropdown-menu-main.multi-column .col-md-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding-right: 5em;
+}
+.navbar .dropdown-menu-main .dropdown-header:hover {
+  color: #d11010;
+  cursor: pointer;
+}
+.navbar .dropdown-menu-main .dropdown-item {
+  padding: 0.8em 2em 0.8em 1em;
+  background-color: transparent;
+  font-weight: 400;
+}
+
+#sale-carousel .carousel-control-prev-icon,
+#sale-carousel .carousel-control-next-icon {
+  filter: invert(0.2) grayscale(20) !important;
+}
+
+.dropdown:hover .dropdown-menu-main {
+  display: block;
+  margin-left: 1.5em;
+}
+
+@media (max-width: 992px) {
+  .container {
+    position: relative;
+  }
+  .collapse-menu {
+    position: absolute;
+    z-index: 5;
+    top: 3.3em;
+    margin-left: 0.8em;
+    transition: 0.5s;
+    background-color: #fff;
+    width: 15em;
+    border-radius: 0.25em;
+    box-shadow: 0 1px 4px g #ccc;
+    padding: 0.5em 1.5em;
+  }
+  .collapse-menu .menu-item, .collapse-menu .submenu-item {
+    border-bottom: 0.25px solid #ccc;
+    padding: 0.25em 0;
+  }
+}
+.carousel-caption {
+  right: auto !important;
+  left: 0 !important;
+  height: 100%;
+  padding-top: 10% !important;
+  padding-left: 10vw;
+  text-align: start !important;
+}
+.carousel-caption p {
+  text-align: start;
+}
+
+.carousel-indicators {
+  margin-bottom: 2rem !important;
+}
+.carousel-indicators #slide-indicator {
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-radius: 100%;
+  background-color: #ccc;
+}
+.carousel-indicators #slide-indicator.active {
+  background-color: #d11010;
+}
+
+.carousel-timer {
+  height: 3px;
+  background-color: #fff;
+  position: relative;
+}
+
+.carousel-timer-bar {
+  height: 100%;
+  background-color: #ccc;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#slide-button {
+  padding: 0.5rem 3rem !important;
+}
+#slide-button:hover {
+  background-color: #d11010;
+  border-color: #d11010;
+}
+
+.section-one .bg-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.25s;
+}
+.section-one a:hover {
+  color: #d11010 !important;
+}
+.section-one .top-trending {
+  cursor: pointer;
+  overflow: hidden;
+  background-color: transparent;
+  border: 0;
+}
+.section-one .top-trending:hover .bg-image {
+  scale: 1.05;
+  filter: contrast(0.9);
+}
+.section-one .top-trending .bg-image {
+  background-image: url(images/banner1.jpg);
+}
+.section-one .black-fridays {
+  cursor: pointer;
+  overflow: hidden;
+  background-color: transparent;
+  border: 0;
+}
+.section-one .black-fridays:hover .bg-image {
+  scale: 1.05;
+  filter: contrast(0.9);
+}
+.section-one .black-fridays .bg-image {
+  background-image: url(images/banner2.jpg);
+}
+.section-one .new-arrivals {
+  cursor: pointer;
+  overflow: hidden;
+  background-color: transparent;
+  border: 0;
+}
+.section-one .new-arrivals:hover .bg-image {
+  scale: 1.05;
+  filter: contrast(0.9);
+}
+.section-one .new-arrivals .bg-image {
+  background-image: url(images/banner3.jpg);
+}
+.section-one .shipping-menu img {
+  width: 3rem;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .section-one .shipping-menu .border-sd-end {
+    border: none !important;
+  }
+}
+
+#product-carousel .card, #arrivals-carousel .card {
+  border: 0;
+  position: relative;
+  cursor: pointer;
+}
+#product-carousel .card p:hover, #arrivals-carousel .card p:hover {
+  color: #d11010;
+}
+#product-carousel .card .stars, #arrivals-carousel .card .stars {
+  font-size: 0.8em;
+}
+#product-carousel .card a, #arrivals-carousel .card a {
+  text-decoration: none;
+  color: #000;
+}
+#product-carousel .card a:hover, #arrivals-carousel .card a:hover {
+  color: #d11010 !important;
+  text-decoration: underline;
+}
+#product-carousel .card .price, #arrivals-carousel .card .price {
+  color: #d11010;
+}
+#product-carousel .card .add, #arrivals-carousel .card .add {
+  display: none;
+  height: 2.8em;
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 55%;
+  border: 0;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px #ccc;
+}
+#product-carousel .card .add:hover, #arrivals-carousel .card .add:hover {
+  background-color: #d11010;
+  color: #fff;
+}
+#product-carousel .card:hover .add, #arrivals-carousel .card:hover .add {
+  display: block;
+}
+#product-carousel .card .product-buttons, #arrivals-carousel .card .product-buttons {
+  position: absolute;
+  top: -5%;
+  right: 5%;
+  transition: 0.5s;
+  opacity: 0;
+}
+#product-carousel .card .product-buttons .btn, #arrivals-carousel .card .product-buttons .btn {
+  margin-bottom: 0.5em;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px #ccc;
+  width: 3em;
+  height: 3em;
+  border: 0;
+}
+#product-carousel .card .product-buttons .btn:hover, #arrivals-carousel .card .product-buttons .btn:hover {
+  background-color: #d11010;
+  color: #fff !important;
+}
+#product-carousel .card:hover .product-buttons, #arrivals-carousel .card:hover .product-buttons {
+  top: 5%;
+  opacity: 1;
+}
+#product-carousel .card:hover .product-buttons .btn, #arrivals-carousel .card:hover .product-buttons .btn {
+  margin-bottom: 0.5em;
+}
+#product-carousel:hover .prev-style, #arrivals-carousel:hover .prev-style {
+  filter: contrast(0.5);
+}
+#product-carousel:hover .next-style, #arrivals-carousel:hover .next-style {
+  filter: contrast(0.5);
+}
+#product-carousel .carousel-control-prev, #arrivals-carousel .carousel-control-prev {
+  left: 2rem;
+}
+#product-carousel .carousel-control-prev .prev-style:hover, #arrivals-carousel .carousel-control-prev .prev-style:hover {
+  filter: invert(1);
+}
+#product-carousel .carousel-control-next, #arrivals-carousel .carousel-control-next {
+  right: 2rem;
+}
+#product-carousel .carousel-control-next .next-style:hover, #arrivals-carousel .carousel-control-next .next-style:hover {
+  filter: invert(1);
+}
+
+.section-two .bg-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.25s;
+}
+.section-two a:hover {
+  color: #d11010 !important;
+}
+.section-two .cutlery {
+  cursor: pointer;
+  overflow: hidden;
+  background-color: transparent;
+  border: 0;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.section-two .cutlery::before {
+  content: "";
+  display: block;
+  padding-right: 50%;
+}
+.section-two .cutlery .cutlery-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.section-two .cutlery:hover .bg-image {
+  scale: 1.05;
+  filter: contrast(0.9);
+}
+.section-two .cutlery .bg-image {
+  background-image: url(images/banner14.jpg);
+  background-position: right center;
+}
+.section-two .apron {
+  cursor: pointer;
+  overflow: hidden;
+  background-color: transparent;
+  border: 0;
+}
+.section-two .apron:hover .bg-image {
+  scale: 1.05;
+  filter: contrast(0.9);
+}
+.section-two .apron .bg-image {
+  background-image: url(images/banner15.jpg);
+}
+.section-two .napkins {
+  cursor: pointer;
+  overflow: hidden;
+  background-color: transparent;
+  border: 0;
+}
+.section-two .napkins:hover .bg-image {
+  scale: 1.05;
+  filter: contrast(0.9);
+}
+.section-two .napkins .bg-image {
+  background-image: url(images/banner16.jpg);
+  background-position: bottom center;
+}
+.section-two .pitchers {
+  cursor: pointer;
+  overflow: hidden;
+  background-color: transparent;
+  border: 0;
+}
+.section-two .pitchers:hover .bg-image {
+  scale: 1.05;
+  filter: contrast(0.9);
+}
+.section-two .pitchers .bg-image {
+  background-image: url(images/banner17.jpg);
+  background-position: bottom center;
+}
+.section-two .accessories {
+  cursor: pointer;
+  overflow: hidden;
+  background-color: transparent;
+  border: 0;
+}
+.section-two .accessories:hover .bg-image {
+  scale: 1.05;
+  filter: contrast(0.9);
+}
+.section-two .accessories .bg-image {
+  background-image: url(images/banner19.jpg);
+  background-position: bottom center;
+}
+.section-two .dinerware {
+  cursor: pointer;
+  overflow: hidden;
+  background-color: transparent;
+  border: 0;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.section-two .dinerware::before {
+  content: "";
+  display: block;
+  padding-right: 50%;
+}
+.section-two .dinerware .dinerware-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.section-two .dinerware:hover .bg-image {
+  scale: 1.05;
+  filter: contrast(0.9);
+}
+.section-two .dinerware .bg-image {
+  background-image: url(images/banner18.jpg);
+}
+@media (max-width: 768px) {
+  .section-two .dinerware-head, .section-two .cutlery-head {
+    height: 500px;
+  }
+}
+
+footer {
+  --bs-gutter-x: 0px !important;
+}
+footer .small-logo {
+  height: 50px;
+}
+footer .input-subscribe {
+  border: 0;
+  height: 3em;
+  padding-left: 1.5em;
+}
+footer .input-subscribe:focus {
+  box-shadow: none;
+}
+footer .subscribe {
+  background-color: #fff;
+  border: 0;
+}
+footer .subscribe:hover {
+  background-color: #fff;
+  color: #d11010;
+}
+footer .subscribe:active {
+  background-color: #fff !important;
+}
+footer .social-media a {
+  color: #555;
+}
+footer .social-media a:hover {
+  color: #d11010 !important;
+}
+footer a {
+  color: #555;
+}
+footer a:hover {
+  color: #d11010 !important;
+}
+
+.btn-scroll-to-top {
+  opacity: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+}
+
+.btn-scroll-to-top.show {
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */

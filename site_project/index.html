@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site_project</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+        integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="border-bottom">
+        <div class="container d-flex justify-content-between align-items-center top-info">
+            <p class="mt-3">Mid-season sale up to 20% OFF. Use code “SALEOFF20”</p>
+            <div class="language d-flex ">
+                <div class="dropdown">
+                    <a href="" class="dropdown-toggle nav-item nav-link ms-4" type="button"
+                        aria-expanded="false">ENG</a>
+                
+                    <ul class="dropdown-menu dropdown-menu-end units dropdown-menu-main end-0 w-6">
+                        <li><a class="dropdown-item" href="#">RO</a></li>
+                        <li><a class="dropdown-item" href="#">RU</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">                    
+                    <a href="" class="dropdown-toggle nav-item nav-link ms-4" type="button"
+                        aria-expanded="false">USD</a>
+                
+                    <ul class="dropdown-menu dropdown-menu-end units dropdown-menu-main end-0 w-6">
+                        <li><a class="dropdown-item" href="#">EUR</a></li>
+                        <li><a class="dropdown-item" href="#">MDL</a></li>
+                    </ul>
+                </div>
+            </div>        
+        </div>
+    </div>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg justify-content-between">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img class="small-logo" src="images/logo.png" alt="LOGO">
+            </a>
+
+            <button class="navbar-toggler menu-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-main-menu">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="navbar-collapse collapse justify-content-between collapse-menu start-0" id="navbar-main-menu">  
+
+                <!-- main links -->
+                <ul class="navbar-nav m-auto nav-menu">
+                    <li class="nav-item ps-1 ps-lg-3 pe-lg-2 dropdown menu-item">
+                        <a class="nav-link dropdown-toggle nav-item nav-link text-danger" href="index.html" type="button" 
+                            aria-expanded="false">HOME</a>  
+                                <!--for dropdown - data-bs-toggle="dropdown" -->
+
+                        <ul class="dropdown-menu dropdown-menu-main ms-2">
+                            <li><a class="dropdown-item submenu-item" href="#">Cooking & Baking</a></li>
+                            <li><a class="dropdown-item submenu-item" href="#">Preparing</a></li>
+                            <li><a class="dropdown-item submenu-item" href="#">Storage</a></li>
+                            <li><a class="dropdown-item submenu-item" href="#">Serve</a></li>
+                            <li><a class="dropdown-item submenu-item" href="#">Takeaway</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ps-1 ps-lg-3 pe-lg-2 dropdown menu-item">
+                        <a class="nav-link dropdown-toggle nav-item nav-link" href="" type="button"
+                            aria-expanded="false">SHOP</a> 
+                            <!--for dropdown - data-bs-toggle="dropdown" -->
+
+                            <div class="dropdown-menu multi-column dropdown-menu-main start-0" aria-labelledby="dropdownMenuButton">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <h6 class="dropdown-header">Shop Layouts</h6>
+                                            <a class="dropdown-item" href="#">Sidebar Left</a>
+                                            <a class="dropdown-item" href="#">Sidebar Right</a>
+                                            <a class="dropdown-item" href="#">Full Width</a>
+                                            <a class="dropdown-item" href="#">List View</a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h6 class="dropdown-header">Shop Pages</h6>
+                                            <a class="dropdown-item" href="product_category.html">Product Category</a>
+                                            <a class="dropdown-item" href="#">My account</a>
+                                            <a class="dropdown-item" href="#">Wishlist</a>
+                                            <a class="dropdown-item" href="#">Cart</a>
+                                            <a class="dropdown-item" href="#">Checkout</a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h6 class="dropdown-header">Product Types</h6>
+                                            <a class="dropdown-item" href="#">Simple Product</a>
+                                            <a class="dropdown-item" href="#">GroupedProduct</a>
+                                            <a class="dropdown-item" href="#">Variable Product</a>
+                                            <a class="dropdown-item" href="#">External Product</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </li>
+                    <li class="nav-item ps-1 ps-lg-3 pe-lg-2 dropdown menu-item">
+                        <a class="nav-link dropdown-toggle nav-item nav-link" href="" type="button"
+                            aria-expanded="false">BLOG</a> 
+                            <!--for dropdown - data-bs-toggle="dropdown" -->
+
+                            <div class="dropdown-menu multi-column dropdown-menu-main start-0" aria-labelledby="dropdownMenuButton">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <h6 class="dropdown-header">Blog Layouts</h6>
+                                            <a class="dropdown-item" href="#">Sidebar Left</a>
+                                            <a class="dropdown-item" href="#">Sidebar Right</a>
+                                            <a class="dropdown-item" href="#">Large Image</a>
+                                            <a class="dropdown-item" href="#">Blog Grid</a>
+                                            <a class="dropdown-item" href="#">No Sidebar</a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h6 class="dropdown-header">Blog Pages</h6>
+                                            <a class="dropdown-item" href="#">Author</a>
+                                            <a class="dropdown-item" href="#">Archives</a>
+                                            <a class="dropdown-item" href="#">Category</a>
+                                            <a class="dropdown-item" href="#">Blog Tag</a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h6 class="dropdown-header">Post Formats</h6>
+                                            <a class="dropdown-item" href="#">Image Format</a>
+                                            <a class="dropdown-item" href="#">Gallery Format</a>
+                                            <a class="dropdown-item" href="#">Audio Format</a>
+                                            <a class="dropdown-item" href="#">Video Format</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </li>
+                    <li class="nav-item ps-1 ps-lg-4 pe-lg-2 menu-item"><a class="nav-link" href="product_category.html">ALL PRODUCTS</a></li>
+                    <li class="nav-item ps-1 ps-lg-4 pe-lg-2 menu-item"><a class="nav-link" href="#">ABOUT US</a></li>
+                    <li class="nav-item ps-1 ps-lg-4 pe-lg-2"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                </ul>
+        
+                <!-- user link -->
+            </div>
+            <ul class="navbar-nav user-menu flex-row">
+
+                <li class="nav-item ps-1 ms-4">
+                    <a class="nav-link" href="">
+                        <!-- <i class="bi bi-search"></i> -->
+                        <div class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <div class="search-bar">
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" placeholder="Search product"
+                                    aria-describedby="addon-wrapping">
+                                    <span class="input-group-text" id="addon-wrapping">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </a>
+                </li>
+                <li class="nav-item ps-1 ms-4">
+                    <a class="nav-link" href="">
+                        <!-- <i class="bi bi-person user-icon"></i> -->
+                        <i class="fa-regular fa-user user-icon"></i>
+                    </a>
+                </li>
+                <li class="nav-item ps-1 ms-4">
+                    <a class="nav-link" href="wish_list.html">
+                        <!-- <i class="bi bi-heart"></i> -->
+                        <i class="fa-regular fa-heart heart-icon"></i>
+                    </a>    
+                </li>
+                <li class="nav-item ps-1 ms-4">
+                    <a class="nav-link" href="">
+                        <div class="cart">
+                            <i class="bi bi-cart3 cart-icon"></i>
+                            <span class="badge bg-danger rounded-pill card-number">0</span>
+                            <div class="card-products">
+                                <p>No products in the cart.</p>
+                            </div>
+                        </div>
+                    </a>    
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+  
+    <!-- carousel -->
+    <div id="sale-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" id="slide-indicator" data-bs-target="#sale-carousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" id="slide-indicator" data-bs-target="#sale-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" id="slide-indicator" data-bs-target="#sale-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="images/1.jpg" class="d-block w-100" alt="slide">
+                <div class="carousel-caption d-md-block">
+                    <p class="fs-6">Sale Offer 50% Off This Week</p>
+                    <p class="fs-1">Linen Oven Gloves <br>In The Kit</p>
+                    <button type="button" class="btn btn-secondary rounded-pill" id="slide-button">SHOPPING NOW</button>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+                <img src="images/2.jpg" class="d-block w-100" alt="slide">
+                <div class="carousel-caption d-md-block">
+                    <p class="fs-6">Sale Offer 50% Off This Week</p>
+                    <p class="fs-1">Serving Dishes <br>& Mugs</p>
+                    <button type="button" class="btn btn-secondary rounded-pill" id="slide-button">SHOPPING NOW</button>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+                <img src="images/3.jpg" class="d-block w-100" alt="slide">
+                <div class="carousel-caption d-md-block">
+                    <p class="fs-6">Sale Offer 50% Off This Week</p>
+                    <p class="fs-1">Serving Dishes <br>& Mugs</p>
+                    <button type="button" class="btn btn-secondary rounded-pill" id="slide-button">SHOPPING NOW</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#sale-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#sale-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+        <div class="carousel-timer">
+            <div class="carousel-timer-bar"></div>
+        </div>
+    </div>
+    <!-- carousel -->
+
+    <section class="container section-one">
+        <div class="row pt-5">        
+            <div class="col-md-4 mb-3 mb-md-5">        
+                <div class="card ratio ratio-1x1 rounded-0 top-trending">
+                    <div class="card-body p-5 text-center text-md-start top-trending-body">
+                        <p class="text-secondary">Top Trending</p>
+                        <p class="fs-3"><span class="fw-bold">Table Runners</span> <br> Collection</p>
+                        <a href="#"
+                            class="link-underline link-underline-opacity-0 border-bottom border-danger border-2 text-secondary">Discover
+                            Now</a>
+                        <div class="bg-image"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-3 mb-md-5">
+                <div class="card ratio ratio-1x1 rounded-0 black-fridays">
+                    <div class="card-body p-5 text-center">
+                        <p class="text-secondary">Black Fridays</p>
+                        <p class="fs-3"><span class="fw-bold">Sale Up To 50% Off</span> <br> Dinning Ware</p>
+                        <a href="#"
+                            class="link-underline link-underline-opacity-0 border-bottom border-danger border-2 text-secondary">Discover
+                            Now</a>
+                        <div class="bg-image"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3 mb-md-5">
+                <div class="card ratio ratio-1x1 rounded-0 new-arrivals">
+                    <div class="card-body p-5 text-center text-md-start">
+                        <p class="text-secondary">New Arrivals</p>
+                        <p class="fs-3"><span class="fw-bold">Classic</span> <br> Flatware</p>
+                        <a href="#"
+                            class="link-underline link-underline-opacity-0 border-bottom border-danger border-2 text-secondary">Discover
+                            Now</a>
+                        <div class="bg-image"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- shipping menu -->
+        <div class="row pt-5 shipping-menu">
+            <div class="col-6 col-md-3 mb-3 mb-md-5 text-center border-end">
+                <div class="card rounded-0 top-trending">
+                    <img src="icon/icon1.png" alt="icon">
+                    <h4 class="fs-5">Free Shipping</h4>
+                    <p class="fs-6 text-secondary">Free shipping on all order</p>                    
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3 mb-3 mb-md-5 text-center border-end border-sd-end">
+                <div class="card rounded-0 top-trending">
+                    <img src="icon/icon2.png" alt="icon">
+                    <h4 class="fs-5">Money Return</h4>
+                    <p class="fs-6 text-secondary">30 days for free return</p>
+                </div>
+            </div>  
+
+            <div class="col-6 col-md-3 mb-3 mb-md-5 text-center border-end">
+                <div class="card rounded-0 top-trending">
+                    <img src="icon/icon3.png" alt="icon">
+                    <h4 class="fs-5">Online Support</h4>
+                    <p class="fs-6 text-secondary">Support 24 hours a day</p>
+                </div>
+            </div>             
+            <div class="col-6 col-md-3 mb-3 mb-md-5 text-center">
+                <div class="card rounded-0 top-trending">
+                    <img src="icon/icon4.png" alt="icon">
+                    <h4 class="fs-5">Deals & Promotions</h4>
+                    <p class="fs-6 text-secondary">Price savings, discounts, coupons</p>
+                </div>
+            </div>          
+        </div>
+    </section>
+
+    <section class="mt-5 mb-5">
+        <h2 class="text-center mb-4">New Trending Products</h2>
+        <p class="text-center mb-5">Accumsan vitae pede lacus ut ullamcorper sollicitudin quisque libero est.</p>
+        <div id="product-carousel" class="carousel slide">
+            <div class="carousel-inner container">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/1-1products.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$86.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/2-1products-400x400.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$76.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/3-1products-400x400.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-warning"></i>
+                                        <i class="bi bi-star text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$86.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/5-1products-400x400.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$86.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/6-1products.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$86.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/7-1products-400x400.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$76.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/8-1products-400x400.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$86.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/9-1products-400x400.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$86.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/10-1products-400x400.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$86.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/11-1products-400x400.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$76.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/14products-400x400.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$86.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/4-1products-400x400.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$86.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#product-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon prev-style" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#product-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon next-style" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>  
+    </section>
+
+    <section class="container section-two">
+        <div class="row pt-5">
+            <div class="col-md-6 mb-4 mb-md-4 cutlery-head">
+                <div class="card rounded-0 cutlery">
+                    <div class="card-body p-5 text-center text-md-start cutlery-body">
+                        <p class="fs-4"><span class="fw-bold">Table Runners</span></p>
+                        <a href="#"
+                            class="link-underline link-underline-opacity-0 border-bottom border-danger border-2 text-secondary">Shop
+                            Now</a>
+                        <div class="bg-image"></div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-3 mb-4 mb-md-4">
+                <div class="card ratio ratio-1x1 rounded-0 apron">
+                    <div class="card-body p-5 text-start">
+                        <p class="fs-4"><span class="fw-bold">Apron</span></p>
+                        <a href="#"
+                            class="link-underline link-underline-opacity-0 border-bottom border-danger border-2 text-secondary">Shop
+                            Now</a>
+                        <div class="bg-image"></div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-3 mb-4 mb-md-4">
+                <div class="card ratio ratio-1x1 rounded-0 napkins">
+                    <div class="card-body p-5 text-center text-md-start">
+                        <p class="fs-3"><span class="fw-bold">Napkins</span></p>
+                        <a href="#"
+                            class="link-underline link-underline-opacity-0 border-bottom border-danger border-2 text-secondary">Shop
+                            Now</a>
+                        <div class="bg-image"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">            
+            <div class="col-md-3 mb-3 mb-md-5">
+                <div class="card ratio ratio-1x1 rounded-0 pitchers">
+                    <div class="card-body p-5 text-start">
+                        <p class="fs-4"><span class="fw-bold">Pitchers</span></p>
+                        <a href="#"
+                        class="link-underline link-underline-opacity-0 border-bottom border-danger border-2 text-secondary">Shop
+                        Now</a>
+                        <div class="bg-image"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-3 mb-md-5 dinerware-head">
+                <div class="card rounded-0 dinerware">
+                    <div class="card-body p-5 text-center text-md-start dinerware-body">
+                        <p class="fs-4"><span class="fw-bold">Dinerware</span></p>
+                        <a href="#"
+                            class="link-underline link-underline-opacity-0 border-bottom border-danger border-2 text-secondary">Shop
+                            Now</a>
+                        <div class="bg-image"></div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-3 mb-3 mb-md-5">
+                <div class="card ratio ratio-1x1 rounded-0 accessories">
+                    <div class="card-body p-5 text-center text-md-start">
+                        <p class="fs-3"><span class="fw-bold">Accessories</span></p>
+                        <a href="#"
+                            class="link-underline link-underline-opacity-0 border-bottom border-danger border-2 text-secondary">Shop
+                            Now</a>
+                        <div class="bg-image"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5 mb-5">
+        <h2 class="text-center mb-4">New Arrivals Products</h2>
+        <p class="text-center mb-5">Accumsan vitae pede lacus ut ullamcorper sollicitudin quisque libero est.</p>
+        <div id="arrivals-carousel" class="carousel slide">
+            <div class="carousel-inner container border-bottom">
+                <div class="carousel-item mb-5">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/1-1products.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$86.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/2-1products-400x400.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$76.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/3-1products-400x400.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-warning"></i>
+                                        <i class="bi bi-star text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$86.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/5-1products-400x400.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$86.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item mb-5">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/6-1products.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$86.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/7-1products-400x400.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$76.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/8-1products-400x400.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$86.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/9-1products-400x400.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$86.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item mb-5 active">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/10-1products-400x400.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$86.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/11-1products-400x400.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$76.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/14products-400x400.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$86.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/4-1products-400x400.jpg" alt="">
+                                <div class="row mt-2">
+                                    <p class="col text-secondary">Placemats</p>
+                                    <div class="col stars text-end">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Eodem modo vel mattis ante facilisis typesetting industry</a>
+                                <p class="fs-4 fw-bold price">$86.00</p>
+                                <button type="button" class="btn btn-light rounded-pill add">Add to cart</button>
+                                <div class="product-buttons">
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-arrows-rotate"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light rounded-pill d-block">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#arrivals-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon prev-style" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#arrivals-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon next-style" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="p-5 m-5">
+        <h2 class="text-center">Follow us On Instagram</h2>
+        <p class="text-center">Displays an Instagram feed of your photos from your Instagram account on your website.</p>
+    </section>
+
+    <footer class="bg-body-secondary pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col col-12 col-md-4 mb-5">
+                    <img class="small-logo" src="images/logo.png" alt="LOGO">
+                    <p class="link-secondary mt-4">I'm a designer and developer that create this project)</p>
+                    <p class="link-secondary"><span class="fw-bold">ADDRESS:</span> 6688 Princess Road, London,<br> Greater London
+                        BAS 23JK, UK</p>
+                    <p class="link-secondary"><span class="fw-bold">PHONE:</span> (012) 800 456 789-987</p>
+                    <p class="link-secondary"><span class="fw-bold">EMAIL:</span> Contact@plazathemes.com</p>
+                </div>
+                <div class="col col-6 col-md-2">
+                    <h4 class="fw-bold">Customer Care</h4>
+                    <li class="list-group-item mb-3"><a class="link-underline link-underline-opacity-0" href="#">My
+                            account</a></li>
+                    <li class="list-group-item mb-3"><a class="link-underline link-underline-opacity-0"
+                            href="#">Cart</a></li>
+                    <li class="list-group-item mb-3"><a class="link-underline link-underline-opacity-0"
+                            href="#">Shop</a></li>
+                    <li class="list-group-item mb-3"><a class="link-underline link-underline-opacity-0"
+                            href="#">Wishlist</a></li>
+                    <li class="list-group-item mb-3"><a class="link-underline link-underline-opacity-0"
+                            href="#">Checkout</a></li>
+                    </ul>
+                </div>
+                <div class="col col-6 col-md-2">
+                    <h4 class="fw-bold">Information</h4>
+                    <li class="list-group-item mb-3"><a class="link-underline link-underline-opacity-0"
+                            href="#">About Us</a></li>
+                    <li class="list-group-item mb-3"><a class="link-underline link-underline-opacity-0"
+                            href="#">Privacy Policy</a></li>
+                    <li class="list-group-item mb-3"><a class="link-underline link-underline-opacity-0"
+                            href="#">Cart</a></li>
+                    <li class="list-group-item mb-3"><a class="link-underline link-underline-opacity-0"
+                            href="#">Contact</a></li>
+                    <li class="list-group-item mb-3"><a class="link-underline link-underline-opacity-0"
+                            href="#">Wishlist</a></li>
+                    </ul>
+                </div>
+                <div class="col col-12 col-md-4">
+                    <h4 class="fw-bold">Join Our Newsletter Now</h4>
+                    <span class="list-group-item mb-3 link-secondary">Get E-mail updates about our latest shop and special offers.</span>
+                    <div class="input-group mb-3 mt-4">
+                        <input type="text" class="form-control rounded-start-pill input-subscribe" placeholder="Enter your email here.." aria-label="Recipient's username"
+                            aria-describedby="button-addon2">
+                        <button class="btn btn-outline-dark rounded-end-pill subscribe" type="button" id="button-addon2">SUBSCRIBE</button>
+                    </div>
+                    <div class="social-media mt-5 text-center">
+                        <a href="#"><i class="fa-brands fa-square-facebook fs-4 me-3"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter fs-4 me-3"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram fs-4 me-3"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin fs-4 me-3"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-youtube fs-4 me-3"></i></a>
+                        <a href="#"><i class="fa-solid fa-square-rss fs-4"></i></a>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" class="btn btn-light btn-scroll-to-top" title="Scroll to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+                var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+                var scrollOffset = 100; // Deplasarea necesară înainte ca butonul să apară
+
+                window.addEventListener('scroll', function () {
+                    if (window.pageYOffset > scrollOffset) {
+                        scrollToTopBtn.classList.add('show');
+                    } else {
+                        scrollToTopBtn.classList.remove('show');
+                    }
+                });
+
+                scrollToTopBtn.addEventListener('click', function () {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+    </script>
+
+
+
+    <!-- script for dropdown hover -->
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!-- script for slide timer bar -->
+    <script>
+        var slideInterval = 10000; // Intervalul în milisecunde între slide-uri
+        var timerProgress = document.querySelector('.carousel-timer-bar');
+        var timerAnimationId;
+        var startTime;
+
+        function startTimer() {
+            startTime = Date.now();
+            animateTimer();
+        }
+
+        function animateTimer() {
+            var elapsedTime = Date.now() - startTime;
+            var progress = Math.min((elapsedTime / slideInterval) * 100, 100);
+            timerProgress.style.width = progress + '%';
+
+            if (progress < 100) {
+                timerAnimationId = requestAnimationFrame(animateTimer);
+            } else {
+                var carousel = new bootstrap.Carousel(document.getElementById('sale-carousel'));
+                carousel.next();
+                startTimer();
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            startTimer();
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
